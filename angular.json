@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "lazyModules": [
+              "src/app/features/route-lazy-feature/components/non-route-lazy-1/non-route-lazy-one.module",
+              "src/app/features/route-lazy-feature/components/non-route-lazy-2/non-route-lazy-two.module"
+            ]
           },
           "configurations": {
             "production": {
