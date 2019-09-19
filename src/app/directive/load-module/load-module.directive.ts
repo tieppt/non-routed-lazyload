@@ -56,7 +56,6 @@ export class LoadModuleDirective implements OnInit {
 
     const { moduleFactory, moduleRef } = await refPromise;
 
-    // TODO: make sure this works with AoT. This currentlt won't work
     const rootComponent = (moduleFactory.moduleType as ModuleWithRoot)
       .rootComponent;
     const factory = moduleRef.componentFactoryResolver.resolveComponentFactory(
